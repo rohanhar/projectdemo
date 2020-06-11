@@ -1,0 +1,54 @@
+GIT STEPS:
+GIT INIT
+GIT STATUS
+GIT ADD TEST.TXT( if it not works then do  echo > test.txt)
+git add *.*(to commit files)
+git commit -m "message"
+git add remote origin https://github.com/rohanhar/radz2.git
+git push -u origin master
+If it ask for login to make it auto save
+git config user.email "harshu.rohane@gmail.com"
+git config user.name "rohanhar"
+
+Now if you want to edit into file:radz.txt
+git add.
+git commit -m "update msg"
+git push -u origin master
+
+
+how to create branch and swutch from one branch to other:
+git branch branchname(branchname=harshada)
+git checkout harshada(switch from master branch to new branch)
+
+to change anything in file in child branch:
+A. do change in file
+B. go to git terminal:
+git add .
+git commit -m "update msg"
+git push -u origin harshada(harshada is branch name)
+
+if you want to switch from branch1 to branch 2
+git checkout RadhikaR(if RadhikaR is existing)
+Do steps for update as above 
+
+to merge child branch to master:
+git status
+git checkout master(to merge data into master switching to master branch)
+git merge RadhikaR(write childbranch name to which you wanted to merge)
+git push -u origin master(changes into master will appear)
+
+
+Note:
+if at same time you wanted to merge several branches and wanted to go back from one branch then forcefully move into other branch by following command:
+git checkout -f master(or any branch name where you wnat to go)
+
+
+To delete branch:
+
+git branch -d branchname(if it is not deleted from local use following commnad:
+git branch -D branchname
+git push origin --delete branchname(to delete from remote)
+
+
+How to send mail from github
+
